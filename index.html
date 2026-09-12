@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expensive Luks — Expensive looks. Honest price.</title>
+<meta name="description" content="Expensive Luks — five signature sneaker styles, every pair KSH 2,500. Order direct on WhatsApp.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2316131c'/%3E%3Cpath d='M50 18 L74 42 L50 82 L26 42 Z' fill='none' stroke='%23c9a24d' stroke-width='5'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top" aria-label="Expensive Luks home">
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M20 4 L34 20 L20 36 L6 20 Z" fill="none" stroke="currentColor" stroke-width="2.5"/>
+      </svg>
+      <span class="logo-type"><em>Expensive</em> Luks</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#shop">Shop</a>
+      <a href="#how">How it works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn cart-btn" id="cartToggle" aria-label="Open cart" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="21" r="1.4" fill="currentColor"/><circle cx="17" cy="21" r="1.4" fill="currentColor"/></svg>
+        <span class="cart-count" id="cartCount" hidden>0</span>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <h1>Expensive looks.<br>Honest price.</h1>
+        <p class="hero-sub">Five signature styles for the streets of Nairobi — every single pair is <strong>KSH 2,500</strong>, no exceptions.</p>
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-primary">Shop the collection</a>
+          <a href="#" class="btn btn-ghost" id="heroWhatsapp">Chat on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="hero-stage" id="heroStage">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-shoe-card" id="heroShoeCard">
+          <img src="assets/images/shoe1.jpg" alt="The Mogul, Expensive Luks flagship style" onerror="handleImgError(this)">
+        </div>
+        <div class="hero-price-chip">KSH 2,500 <span>· every pair</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TICKER ============ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>ONE PRICE FOR EVERY PAIR</span><span>KSH 2,500</span><span>ORDER DIRECT ON WHATSAPP</span>
+      <span>ONE PRICE FOR EVERY PAIR</span><span>KSH 2,500</span><span>ORDER DIRECT ON WHATSAPP</span>
+      <span>ONE PRICE FOR EVERY PAIR</span><span>KSH 2,500</span><span>ORDER DIRECT ON WHATSAPP</span>
+    </div>
+  </div>
+
+  <!-- ============ SHOP ============ -->
+  <section class="section" id="shop">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>The Collection</h2>
+        <p>Pick a style. The price never changes.</p>
+      </div>
+      <div class="shop-grid" id="shopGrid"><!-- filled by script.js --></div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section section-alt" id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How ordering works</h2>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <h3>Pick your pair</h3>
+          <p>Browse the collection above and find the style that fits you.</p>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <h3>Add to cart</h3>
+          <p>Choose your quantities, then open your cart to review the order.</p>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <h3>Checkout on WhatsApp</h3>
+          <p>Send your order straight to our team and confirm size and delivery there.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="wrap about-inner">
+      <p class="about-statement">We kept one price so you would never have to ask.</p>
+      <p class="about-body">Expensive Luks was built around a simple idea: everyone deserves a pair of shoes that looks like it cost more than it did. No markdowns, no markups — just one flat price of KSH 2,500 on every style in the collection, ordered straight through WhatsApp.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="contact">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <a class="logo" href="#top" aria-label="Expensive Luks home">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M20 4 L34 20 L20 36 L6 20 Z" fill="none" stroke="currentColor" stroke-width="2.5"/>
+        </svg>
+        <span class="logo-type"><em>Expensive</em> Luks</span>
+      </a>
+      <p>Affordable luxury, one flat price.</p>
+    </div>
+
+    <div class="footer-links">
+      <span class="footer-heading">Explore</span>
+      <a href="#shop">Shop</a>
+      <a href="#how">How it works</a>
+      <a href="#about">About</a>
+    </div>
+
+    <div class="footer-contact">
+      <span class="footer-heading">Get in touch</span>
+      <a href="https://wa.me/254720540961" target="_blank" rel="noopener">WhatsApp · 0720 540 961</a>
+      <a href="mailto:Expensivecloset869@gmail.com">Expensivecloset869@gmail.com</a>
+      <span class="footer-muted">Nairobi, Kenya</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap">
+      <span>© 2026 Expensive Luks. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-head">
+    <h2>Your cart</h2>
+    <button class="icon-btn" id="cartClose" aria-label="Close cart">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div class="cart-items" id="cartItems"><!-- filled by script.js --></div>
+
+  <div class="cart-summary">
+    <div class="cart-row cart-total">
+      <span>Total</span>
+      <span id="cartTotal">KSH 0</span>
+    </div>
+    <button class="btn btn-primary btn-block" id="cartCheckout">Order via WhatsApp</button>
+    <p class="cart-note">You'll confirm sizes and delivery with our team on WhatsApp.</p>
+  </div>
+</aside>
+
+<!-- ============ FLOATING WHATSAPP BUTTON ============ -->
+<a href="https://wa.me/254720540961" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with Expensive Luks on WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.23.6 4.32 1.65 6.12L4 29l8.06-1.6a12 12 0 0 0 3.96.67C22.6 28.07 28 22.67 28 16.05 28 9.4 22.64 3 16.02 3zm7.03 17.16c-.3.85-1.7 1.6-2.35 1.7-.6.1-1.35.14-2.18-.14-.5-.16-1.15-.37-1.98-.73-3.48-1.5-5.75-5-5.93-5.24-.17-.24-1.42-1.9-1.42-3.62 0-1.72.9-2.57 1.22-2.92.3-.34.68-.42.9-.42.23 0 .45 0 .65.01.2.01.5-.08.78.6.3.7 1 2.4 1.08 2.58.09.17.14.37.03.6-.1.24-.16.38-.32.58-.16.2-.34.44-.48.6-.16.17-.33.36-.14.7.2.35.87 1.44 1.87 2.33 1.29 1.15 2.37 1.5 2.72 1.67.35.16.55.14.76-.08.2-.23.87-1.01 1.1-1.36.24-.34.47-.29.79-.17.32.12 2.02.95 2.37 1.13.34.17.57.26.65.4.09.16.09.87-.21 1.72z"/></svg>
+</a>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
